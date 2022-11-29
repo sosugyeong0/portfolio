@@ -1,0 +1,306 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+}
+/*공통*/
+.grid0, grid1, grid2, .grid3{
+    /*padding: 100px 0;*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.article0, .article1, .article2, .article3, .article4{
+    font-family: 'Poppins', sans-serif;
+}
+.article0 .title, .article1 .title, .article2 .title, .article3 .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px 0 100px 0;
+    padding-bottom: 8px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.article0 .title::before, .article1 .title::before, .article3 .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.article2 .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+/*배경색*/
+.grid0{background-color: #1e1e1e;}
+.grid1{background-color: #fff;}
+.grid2{background-color: #1e1e1e;}
+.grid3{background-color: #fff;}
+
+/*body {
+    margin: 0px;
+    padding-top: 88px;
+}
+*/
+
+.scroll-container{
+    scroll-behavior: smooth;
+}
+
+/*.title_wrap {
+    box-sizing: initial;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    width: max-content;
+    height: max-content;
+    font-size: 2em;
+    font-weight: 600;
+}*/
+
+header{
+    height: 55px;
+    padding: 1rem;
+    color: white;
+    background: #1e1e1e;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#menu span {
+    padding-left: 30px;
+    color: #fff;
+}
+#menu a:visited {
+    color: #fff;
+}
+#menu span.active{color:rgb(213, 230, 255);}
+
+.title_img {
+    display: block;
+    margin: 10px;
+    float: center;
+    padding-left: auto;
+}
+
+.grid0, .grid1, .grid2, .grid3 {
+    display: grid;
+    scroll-behavior: smooth;
+    min-height: 50vh;
+    /*max-width: 1300px;*/
+    padding: 0 20px;
+    margin: auto;
+}
+
+.grid0 .article0{
+    padding-top: 86px;
+    color: #fff;
+}
+
+/*article0*/
+
+.grid0 {
+    width: 100%;
+    height: 100%;
+}
+.article0 {
+	background-size: cover;
+    /*padding: 0% 0 50%;*/
+    padding-bottom: 30%;
+    padding-right: 15%;
+}
+
+.article0 .Text {
+	line-height: 1; 
+	font-size: 3em; 
+	font-weight: 100; 
+	text-align: left;
+}
+
+/*article0*/
+
+.grid1 .article1 {
+    background-color: #fff;
+    padding-bottom: 45px;
+    padding-top: 86px;
+    max-width: 1300px;
+}
+
+.grid2 .article2 {
+    background-color: #1e1e1e;
+    padding-bottom: 100px;
+    color: #fff;
+    padding-top: 86px;
+    max-width: 1300px;
+}
+
+.grid3 .article3 {
+    background-color: #fff;
+    padding-bottom: 45px;
+    padding-top: 86px;
+}
+
+.skill_box div {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 30px;
+}
+.skill_box div {
+    float: left;
+    width: 32%;
+    background: #fff;
+    padding: 0 20px;
+    margin-right: 2%;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+.skill_box h2 {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    /*#1C658C*/
+    line-height: 25px;
+}
+.skill_box ul {
+    width: 100%;
+    font-size: 0px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+.skill_box li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+.skill_box img {
+    display: block;
+    width: 70%;
+}
+
+.skill_box2 div {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 30px;
+}
+.skill_box2 div {
+    float: center;
+    width: 32%;
+    background: #fff;
+    padding: 0 20px;
+    margin-right: 2%;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+.skill_box2 h2 {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    line-height: 25px;
+}
+.skill_box2 ul {
+    width: 100%;
+    font-size: 0px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+.skill_box2 li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+.skill_box2 img {
+    display: block;
+    width: 70%;
+}
+
+
+.article3_img{
+    padding-left: 5px;
+    padding-top: 8%;
+}
+
+.project_intro{
+    margin: 0px;
+}
+.project_title{
+    padding: 0 5%;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 0.05em;
+}
+.projact_text{
+    padding: 6% 5%;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.grid4 .article4 {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 30px;
+    padding-top: 60px;
+    font-size: 15px;
+    color: white;
+}
+#github img{
+    float: center;
+    -webkit-filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(1);
+}
+
+@media(max-width:800px) {
+    .grid4 {
+        display: block;
+    }
+
+    ol {
+        border-right: none;
+    }
+
+    h1 {
+        border-bottom: none;
+    }
+}
